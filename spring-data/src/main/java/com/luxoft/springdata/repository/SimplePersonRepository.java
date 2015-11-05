@@ -3,6 +3,7 @@ package com.luxoft.springdata.repository;
 import java.util.List;
 import java.util.Set;
 
+import org.neo4j.cypher.internal.compiler.v2_1.planner.logical.findShortestPaths;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
 import org.springframework.data.repository.query.Param;
@@ -17,6 +18,8 @@ public interface SimplePersonRepository extends Repository<Person, Long>, Simple
 
 	Person findByName(String name);
 
+	List<Person> findByNameEndingWith(String name);
+	
 	List<Person> findByAge(Integer age);
 
 	@Query("select p from Person p where p.age >= 18")

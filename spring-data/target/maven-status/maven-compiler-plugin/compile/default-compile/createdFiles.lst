@@ -1,9 +1,13 @@
 com\luxoft\springdata\app\CmdRunner.class
+com\luxoft\springdata\specifiactions\PersonPredicates.class
+com\luxoft\springdata\repository\SimplePersonRepository.class
+com\luxoft\springdata\domain\Person.class
+com\luxoft\springdata\specifiactions\PersonSpecifications.class
 com\luxoft\springdata\domain\QPerson.class
 com\luxoft\springdata\repository\PersonRepository.class
+com\luxoft\springdata\repository\SimplePersonRepositoryImpl.class
 com\luxoft\springdata\app\WebServerConfiguration.class
-com\luxoft\springdata\repository\SimplePersonRepository.class
+com\luxoft\springdata\repository\SimplePersonRepositoryExtension.class
 com\luxoft\springdata\app\DatabaseConfiguration.class
 com\luxoft\springdata\app\App.class
-com\luxoft\springdata\domain\Person.class
 com\luxoft\springdata\app\service\PersonService.class

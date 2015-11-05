@@ -77,6 +77,9 @@ public class PersonService {
 		System.out.println("\nFetch voters");
 		simplePersonRepository.fetchVoters().stream().map((p) -> p.toString()).forEach(System.out::println);
 
+		System.out.println("\nFetch by name endding with");
+		simplePersonRepository.findByNameEndingWith("niel").stream().map((p) -> p.toString()).forEach(System.out::println);
+
 		System.out.println("\nFetch by name indexed");
 		simplePersonRepository.fetchByNameIndexed("Dani%").stream().map((p) -> p.toString())
 				.forEach(System.out::println);
